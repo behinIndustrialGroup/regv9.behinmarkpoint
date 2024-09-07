@@ -1,5 +1,8 @@
 <?php
 
+use BehinFileControl\BehinFileControlProvider;
+use BehinInit\BehinInitProvider;
+use BehinVehicleRegistration\PackageProviders;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -185,7 +188,9 @@ return [
         /*
          * Package Service Providers...
          */
-
+        BehinInitProvider::class,
+        PackageProviders::class,
+        BehinFileControlProvider::class,
         /*
          * Application Service Providers...
          */
