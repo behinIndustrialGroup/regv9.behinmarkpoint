@@ -20,7 +20,7 @@ class VehicleRegController extends Controller
             'lastname' => 'required'
         ]);
         $data = $request->all();
-        $data['unique_id'] = UniqueIDController::create('vehicle_registrations', 'unique_id');
+        $data['unique_id'] = UniqueIDController::create('unique_id');
         $row = VehicleRegistration::create($data);
         if($row){
             return response()->json([
