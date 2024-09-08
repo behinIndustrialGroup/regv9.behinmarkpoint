@@ -69,6 +69,10 @@ class VehicleRegController extends Controller
     }
 
     public function step3(Request $request){
+        $request->validate([
+            'unique_id' => 'required',
+            'payment_file' => 'required',
+        ]);
         $row = $this->getByUniqueID($request->unique_id);
         
         if(!$row){
