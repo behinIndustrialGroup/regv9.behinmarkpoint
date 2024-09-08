@@ -23,7 +23,15 @@
                 </div>
 
 
-                <!-- Vehicle Manufacturer -->
+                <!-- Payment Slip -->
+                <p>
+                    Please arrange booking fee payment, Naira 150,000, to the below bank account and upload the remittance slip.
+                </p>
+                <p>
+                    BEHIN-MARKPOINT LTD
+                </p>
+                <p>0060908265</p>
+                <p>UNITY BANK PLC</p>
                 <div class="mb-3">
                     <label for="payment_fiel" class="form-label">Payment Slip</label>
                     <input type="file" name="payment_file" class="form-control" id="payment_fiel">

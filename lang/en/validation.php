@@ -179,6 +179,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'vehicle_reg_state' => 'vehicle register state'
+    ],
 
 ];
