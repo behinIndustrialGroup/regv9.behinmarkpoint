@@ -46,7 +46,7 @@
                 <div class="mb-3">
                     <label for="residenceState" class="form-label">Residence State</label>
                     <select class="form-control" name="residence_state" id="state">
-                        @include('VehicleRegView::partial.nig-cities')
+                        @include('VehicleRegView::partial.enabled-nig-cities')
                     </select>
                 </div>
 
