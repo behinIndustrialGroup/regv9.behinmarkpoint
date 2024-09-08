@@ -17,7 +17,10 @@ class VehicleRegController extends Controller
     function step1(Request $request) {
         $request->validate([
             'firstname' => 'required',
-            'lastname' => 'required'
+            'lastname' => 'required',
+            'nin' => 'required',
+            'phone' => 'required',
+            'residence_state' => 'required',
         ]);
         $data = $request->all();
         $data['unique_id'] = UniqueIDController::create('unique_id');
@@ -39,6 +42,14 @@ class VehicleRegController extends Controller
     }
 
     public function step2(Request $request){
+        $request->validate([
+            'unique_id' => 'required',
+            'vehicle_manufacturer' => 'required',
+            'vehicle_model' => 'required',
+            'vehicle_year' => 'required',
+            'vehicle_reg_state' => 'required',
+            'vehicle_reg_number' => 'required',
+        ]);
         $row = $this->getByUniqueID($request->unique_id);
         
         if(!$row){

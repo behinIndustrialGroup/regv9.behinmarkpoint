@@ -12,8 +12,8 @@
                     style="max-width: 150px;">
             </div>
             <!-- Form Title -->
-            <h2 class="text-center mb-2">Registration Form</h2>
-            <h5 class="text-center mb-4">for Vehicle CNG Conversion</h5>
+            <h2 class="text-center mb-2">Vehicle CNG Conversion</h2>
+            <h5 class="text-center mb-4">Registration Form</h5>
 
             <!-- Form -->
             <form class="" action="javascript:void(0)" id="registeration-form">
