@@ -25,13 +25,14 @@
 
                 <!-- Payment Slip -->
                 <p>
-                    Please arrange booking fee payment, Naira 150,000, to the below bank account and upload the remittance slip.
-                </p>
-                <p>
+                    Please arrange booking fee payment, Naira 20,000, to the below bank account and upload the remittance slip.
+                    <br>
                     BEHIN-MARKPOINT LTD
+                    <br>
+                    0060908265
+                    <br>
+                    UNITY BANK PLC
                 </p>
-                <p>0060908265</p>
-                <p>UNITY BANK PLC</p>
                 <div class="mb-3">
                     <label for="payment_fiel" class="form-label">Payment Slip</label>
                     <input type="file" name="payment_file" class="form-control" id="payment_fiel">
@@ -42,6 +43,9 @@
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary" onclick="submit_form()">Submit</button>
                 </div>
+                <p class="alert alert-warning">
+                    After making the booking fee payment, you will be called for Vehicle Technical Inspection in our workshop and during the inspection our technicians will inform you about the conversion cost based on your vehicle brand and model. Then you will pay an advance payment and will fix the schedule for converting your vehicle in Behin Markpoint workshop.
+                </p>
             </form>
         </div>
     </div>
@@ -59,7 +63,7 @@
                     if (response.status == 200) {
                         $('#registeration-form').html(`
                         <div class="alert alert-success">
-    Registration was successful
+    Your vehicle CNG conversion registration was successful and you will be called for the technical inspection in our workshop.
 </div>
                         `)
                     }
